@@ -1,0 +1,12 @@
+<table class="table">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Pais de Origen</th>
+    </tr>
+    <tr *ngFor="let voluntario of voluntarios">
+        <td>{{voluntario.nombre}}</td>
+        <td>{{voluntario.edad}}</td>
+        <td>{{voluntario.pais_de_origen}}</td>
+    </tr>
+</table>
