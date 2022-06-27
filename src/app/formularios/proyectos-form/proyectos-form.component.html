@@ -2,22 +2,22 @@
   <form>
     <div>
       <label for="inputEmail4" class="form-label">Nombre del proyecto</label>
-      <input type="text" class="form-control" id="inputEmail4">
+      <input type="text" #nameProject class="form-control" id="inputEmail4">
     </div> <br>
     <div>
       <label for="inputEmail4" class="form-label">Poblacion Meta</label>
-      <input type="text" class="form-control" id="inputEmail4">
+      <input type="text" #goalPopulationProject class="form-control" id="inputEmail4">
     </div> <br>
     <div>
       <label for="inputCity" class="form-label">Pais</label>
-      <input type="text" class="form-control" id="inputCity">
+      <input type="text" #countryProject class="form-control" id="inputCity">
     </div><br>
     <div>
       <label for="inputZip" class="form-label">Duracion en semanas</label>
-      <input type="text" class="form-control" id="inputZip">
+      <input type="text" #durationProject  class="form-control" id="inputZip">
     </div><br>
     <div>
-      <button type="submit" class="btn btn-warning">Guardar</button>
+      <button type="submit" class="btn btn-warning" (click)="addData(nameProject.value, goalPopulationProject.value, countryProject.value, durationProject.value); nameProject.value = ''; goalPopulationProject.value = ''; durationProject.value = ''; countryProject.value = '';">Guardar</button>
     </div>
   </form>
-  </div>
+</div>
