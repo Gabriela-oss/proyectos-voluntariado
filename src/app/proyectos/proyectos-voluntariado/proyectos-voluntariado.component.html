@@ -1,15 +1,14 @@
-<button (click)="getData()">Get</button>
-<!-- <table class="table">
+<table class="table">
   <tr>
     <th>Nombre del Proyecto</th>
     <th>Pais</th>
     <th>Poblacion meta</th>
     <th>Duracion en semanas</th>
   </tr>
-  <tr  *ngFor="let proyecto of proyectos">
-    <td>{{proyecto.nombre_del_proyecto}}</td>
-    <td>{{proyecto.pais}}</td>
-    <td>{{proyecto.poblacion_meta}}</td>
-    <td>{{proyecto.duracionEnSemanas}}</td>
-  </tr> 
-</table> -->
+  <tr *ngFor="let proyecto of proyectos">
+    <td>{{ proyecto.name }}</td>
+    <td>{{ proyecto.country }}</td>
+    <td>{{ proyecto.goalPopulation }}</td>
+    <td>{{ proyecto.number }}</td>
+  </tr>
+</table>

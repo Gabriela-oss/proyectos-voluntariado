@@ -1,4 +1,3 @@
-
 export interface Proyecto{
     name: string;
     country: string;
